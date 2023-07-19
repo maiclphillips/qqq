@@ -1,0 +1,16 @@
+<?php
+
+	$ValidatorList 		 = "Validator/List.txt";
+	// File location of your leads to get validate
+
+	$ValidatorValidLeads = "ValidO365.txt";
+	// Location for valid leads to be stored
+
+	$ValidatorBadLeads   = "InvalidO365.txt";
+	// Location for bad leads to be stored
+
+	$ValidatorStrictMode = 1; // Choose 0 | 1
+	// 0 = Normal check
+	// 1 = Deep check
+
+?>

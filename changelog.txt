@@ -1,0 +1,26 @@
+1.0.1
+	Published
+
+1.0.2
+	Smtp Checker added
+	Fixing directorly location on Settings
+
+1.0.3
+	Validator for office emails Added
+	Frommail Finder added
+
+1.0.4
+	Changelog added
+	SMTP Checker function description added
+	Frommail Finder function description added
+	Validator function description added
+	Compiler renewed
+	Version file added
+	Readme file added on each function
+
+1.0.5
+	Temporary file during updates
+	Seperating KM and G29
+	Autosave report for function
+	O365 Offline Attachment 
+	A29+ Service

@@ -1,0 +1,11 @@
+SMTP Checker function setup
+
+	requirement
+		smtps details to get check
+		
+	steps
+		1.open SMTPChecker folder
+		2.put your smtp list on /root/SMTPChecker/Settings
+		3.run checker
+		4.check goodsmtp.txt
+		

@@ -1,0 +1,11 @@
+Frommail Finder function setup
+
+	requirement
+		extracted email from the smtp
+		smtp that you want to get spoof
+		
+	steps
+		put emails on /root/FrommailFinder/list.txt
+		put smtp on /root/FrommailFinder/Settings
+		put email on /root/FrommailFinder/Settings
+		check your email until you found the one that inbox

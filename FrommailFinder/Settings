@@ -1,0 +1,33 @@
+<?php 
+
+	$FrommailFinderSMTP = [
+		'SMTP Server' => '',
+	    'Username'    => '',
+        'Password'    => '',
+	    'Port'        => '',
+	    'Tls'         => '',
+
+	/*    Example how to put your SMTP
+
+	
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+    
+  	
+  	*/
+	];
+
+
+	$FrommailFinderDestination = "your@email.here";
+	// Email that you use to check spoofs
+
+	$FrommailFinderEmailList = "FrommailFinder/List.txt"; 
+	// File location of your emails to be check 1 by 1
+	
+	$FrommailFinderLetter = "FrommailFinder/Letter.html";
+	$FrommailFinderFromname = "Fromname FrommailFinder";
+	$FrommailFinderSubject = "Subject FrommailFinder";
+?>

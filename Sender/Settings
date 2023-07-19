@@ -1,0 +1,123 @@
+<?php
+$SMTP = [
+
+	[
+	'SMTP Server' => '', // SMTP server address
+    'Username'	  => '', // Email / Username of your SMTP
+    'Password' 	  => '', // Password of your SMTP
+    'Port' 		  => '', // Port of your SMTP
+    'Tls'		  => '', // Choose 'ssl' or 'tls' for connection
+    ],
+
+    /*Example of Single SMTP*/
+  /*
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+    ],
+  */
+
+    /*Example of Multiple SMTP*/
+  /*
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username1@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+     ],
+  
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username2@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+    ],
+  */
+];
+
+$SETUP = [
+    'Mail Priority' => 1, // 1 = Very Important | 2 = Important | 3 = Normal
+
+    'Time' => 'America/Adak', // Timezones, Check here 'https://www.w3schools.com/php/php_ref_timezones.asp'
+
+    'Sleeptime' => 3, // Delay for each sending
+    'Mail Limit' => 100, // Limit to make Delay Limit
+    'Delay Limit' => 3, // Delay for Mail Limit
+    'Thread' => 1, // How many email per send ( G29 max 1 Thread | KillerMailer max 50 Thread )
+
+    'Encryption' => 'unicode', //DEFAULT are Unicode. Encryption option unicode, unicodebold, unicodeitalic, punnycode
+    'Charset' => 'utf-8', //DEFAULT are utf-8. Charset option us-ascii, iso-8859-1, utf-8
+    'Encoding' => 'base64', //DEFAULT are base64, Encoding option 7bit, 8bit, base64, binary, quoted-printable
+
+    'From Name' => '<CHAR3>-<RANDSTRING>', // Mail senders name <FUNCTION WORKS>
+    'From Name Encryption' => 1, //  You can choose 3 different Encoding ( 0 | 1 | 2 )
+    'Mail Subject' => 'Test-<NUMBER3> on <DATE>', // Mail subject <FUNCTION WORKS>
+    'Subject Encryption' => 1, //  You can choose 3 different Encoding ( 0 | 1 | 2 )
+    'From Mail' => [''], // Spoof From Mail <FUNCTION WORKS> /* ['spoof@1.com','spoof@2.com','spoof@3.com'] */
+    'Masking From Mail' => 0, // 1 = Spoof email | 0 = Not spoofing
+    'Hiding From Mail' => 0, // 1= Hiding frommail | 0 No /*WORKS frommail must be used, WORKS only on smtp that can spoof email outside the email host example: godaddy, gsuite
+
+    'Email Test' => 0, // 1 = Testing email on | 0 = Testing email off
+    'Test Every' => 100, // Send email test every
+    'Email Destination' => 'admin@a29.com', // Testing Destination
+
+    'Reply-to' => 0, // 1 = Reply-to function on | 0 = Reply-to function off
+    'Reply-to Mail' => '', // Email for reply-to
+    'Reply-to Name' => '', // Name for reply-to
+
+    /*Still not Active*/
+    'Auto Letter' => 0, // 1 = Auto letter on | 0 = Auto letter off
+    'Type Letter' => '', // Type of letter. List for letter TBA
+
+    'Letter' => 'Sender/Letter.html', // Letter that you want to use
+    'HTML to Img Letter' => 0, // Convert your html to IMG Letter (You can add multiple img 'Source From Anywhere')
+    'Link Img Letter' => 'https://your.link/?e=', // Link for IMG Letter
+
+    'Maillist' => 'Sender/Leads.txt', // Maillist that you want to use
+
+    /*Need Subscription*/
+    'Google Redirect' => 0, // 1 = Google redirect on | 0 = Google redirect off
+    'Link G-Redirect' => 'https://your.link/?e=', // Link for redirect put <GREDIRECT> on part of link
+
+    'Send Attachment' => 1, // 1 = Send Attachment on | 0 = Send Attachment off
+
+    /*Still not Active*/
+    'Auto Attachment' => 0, // 1 = Auto Attachment on | 0 = Auto Attachment off
+    'Autolink Attachment' => 0, // 1 = Autolink Attachment on | 0 = Autolink Attachment off
+    'Type Attachment' => '',
+
+    /*Pdf Attachment*/
+    'HTML to Pdf Attachment' => 0, // 1 = HTML Attachment on | 0 = HTML Attachment off.
+    'HTML to Pdf Content' => 'Sender/pdfattachment.html', //PDF Content (HTML) <FUNCTION WORKS>
+    'HTML to Pdf Name' => '<CHAR3>-<NUMBER6>.pdf', // Name for PDF <FUNCTION WORKS>
+
+    /*Html Attachment*/
+    'HTML Attachment' => 1, // 1 = HTML Attachment on | 0 = HTML Attachment off.
+    'File Attachment' => 'Sender/attachment.html', // Attachment to send <FUNCTION WORKS>
+    'Name Attachment' => '<CHAR3>-<NUMBER6>.htm', // Name for attachment <FUNCTION WORKS>
+    'Attachment Encryption' => 0, // 1 = Encryption on | 0 = Encryption off. Encryption for HTML Attachment
+
+    /*Eml Attachment*/
+    'EML Attachment' => 0, // 1 = Eml Attachment on | 0 = Eml Attachment off.
+    'EML File Attachment' => 'Sender/emlattachment.html', // Eml Attachment to send <FUNCTION WORKS>
+    'Name EML Attachment' => '<CHAR3>-<NUMBER6>.eml', // Name for Eml Attachment <FUNCTION WORKS>
+
+    'Link' => [''], // Link for function <LINK> and autolink attachment
+
+    'Base64 Link' => 'https://your.link/<EMAIL64>', // Base64 Link for function <LINK64>
+
+    /* Example of Single Link */
+    /*
+    'Link'                   => ['https://google.com'], // Link for function <LINK> and autolink attachment
+    */
+
+    /*Example of Multiple Link */
+    /*
+    'Link'                   => ['https://google.com','https://yahoo.com','https://outlook.com'], // Link for function <LINK> and autolink attachment
+    */
+];

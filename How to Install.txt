@@ -1,0 +1,25 @@
+Steps to install the program:
+1. Login to your vps using bitvise
+2. Extract the files from zip
+3. Open SFTP from bitvise
+4. Upload by drag n drop the files to your vps (UPLOAD THE FILES NOT FOLDER)
+5. Open Terminal and run these command
+	-bash installer.sh
+
+Steps to configure the sender:
+IMPORTANT NOTICE (DEFAULT CONFIGURATION ARE INBOX ALL YOU NEED JUST PUT THE KEY, SMTP AND MAIL TO TEST)
+1. open bitvise ssh and login
+2. open sftp and choose Sender folder
+3. edit with Settings file
+ click external program and find notepad++
+ and click always use the selected program
+4. fill the smtp, spoof and key
+5. edit Leads.txt
+6. put your email and save
+7. edit Letter.html
+8. put your letter and save
+9. edit Attachment.html
+10. put your link and save
+11. run the sender ./KillerMailer
+
+Once you seen inbox you can start to adjust the letter, subject and fromname by editing them 1 by 1

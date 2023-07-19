@@ -1,0 +1,16 @@
+Setup with the latest updates
+
+	Requirements
+		-notepad++
+		-bitvise ssh
+		-sender file (zip)
+
+	steps
+		1. login vps
+		2. open sftp
+		3. extract sender files from zip
+		4. upload just the files from zip only
+		5. open terminal
+		6. put "bash installer.sh" and enter
+		7. follow the instruction
+		8. finished

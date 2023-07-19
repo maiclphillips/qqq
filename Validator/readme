@@ -1,0 +1,10 @@
+Validator function setup
+
+	requirement
+		emails to get check
+		
+	steps
+		1.open Validator folder
+		2.put emails on /root/Validator/List,txt to get check
+		3.run program
+		4.check the validated one on /root/Validator/validO365.txt

@@ -1,0 +1,55 @@
+<?php
+	
+	$goodsmtp	=	'goodsmtp.txt';
+	// Location for valid smtp to be stored 
+
+	$badsmtp	=	'badsmtp.txt';
+	// Location for bad smtp to be stored
+
+
+$SMTPCHECK 	= [
+	[
+	'SMTP Server' => 'smtp.a29.com',
+	'Username'    => 'username1@a29.com',
+	'Password'    => 'P@55w0rd',
+	'Port'        => '587',
+	'Tls'         => 'tls',
+     ],
+	 
+	/*    Example how to put your SMTP
+	
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username1@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+     ],
+  
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username2@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+    ],
+
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username3@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+     ],
+  
+	[
+	'SMTP Server' => 'smtp.a29.com', // SMTP server address
+	'Username'    => 'username4@a29.com', // Email / Username of your SMTP
+	'Password'    => 'P@55w0rd', // Password of your SMTP
+	'Port'        => '587', // Port of your SMTP
+	'Tls'         => 'tls', // Choose 'ssl' or 'tls' for connection
+    ],
+  	
+  	*/
+];
+?>
